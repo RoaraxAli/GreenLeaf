@@ -183,15 +183,12 @@ GreenLeaf/
 
 User Credentials
 
-# Go to the signup page and create your account:
-# Username: Choose your preferred username or email
-# Password: Set a secure password of your choice
-
-# After signing up, update your role to admin in the database.
-
-# Open your SQL tool (e.g., phpMyAdmin) or use a MySQL client.
-
-# Run the following SQL query (replace your_email@example.com with your email):
+Go to the signup page and create your account:
+Username: Choose your preferred username or email
+Password: Set a secure password of your choice
+After signing up, update your role to admin in the database.
+Open your SQL tool (e.g., phpMyAdmin) or use a MySQL client.
+Run the following SQL query (replace your_email@example.com with your email):
 
 UPDATE users
 SET role = 'admin'
