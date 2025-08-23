@@ -99,43 +99,6 @@ Locate the database.sql file in the project from sql folder.
 
 This creates tables for users, plants, orders, cart, blogs, reminders, and saved_blogs with appropriate relationships.
 
-Configuration
-Update config.php:
-
-Open config/config.php and update the database credentials:
-
-<?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'your_mysql_username');
-define('DB_PASS', 'your_mysql_password');
-define('DB_NAME', 'greenleaf');
-?>
-
-(Optional) Update config/database.php:
-<?php
-class Database {
-    private $host = 'localhost';
-    private $db_name = 'greenleaf';
-    private $username = 'your_mysql_username';
-    private $password = 'your_mysql_password';
-    private $conn;
-
-    public function getConnection() {
-        $this->conn = null;
-        try {
-            $this->conn = new mysqli($this->host, $this->username, $this->password, $this->db_name);
-            $this->conn->set_charset('utf8mb4');
-        } catch (Exception $e) {
-            echo 'Connection Error: ' . $e->getMessage();
-        }
-        return $this->conn;
-    }
-}
-?>
-
-
-Replace your_mysql_username and your_mysql_password with your actual MySQL credentials.
-
 Running the Application
 
 Start the web server:
