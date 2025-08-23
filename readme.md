@@ -86,28 +86,16 @@ Install PHP dependencies:
 
 composer install
 
-
-Install JavaScript dependencies (if applicable):
-
-npm install
-
 Database Setup
 Create the Database:
 
 Open your MySQL client or terminal and run:
 
-mysql -u <your_mysql_username> -p -e "CREATE DATABASE greenleaf;"
+mysql -u <your_mysql_username> -p -e "CREATE DATABASE greenleaf_db;"
 
 Import the Database Schema:
 
-Locate the database.sql file in the project root or sql folder.
-
-Using phpMyAdmin: Navigate to the Import tab and upload database.sql.
-
-Using command line:
-
-mysql -u <your_mysql_username> -p greenleaf < database.sql
-
+Locate the database.sql file in the project from sql folder.
 
 This creates tables for users, plants, orders, cart, blogs, reminders, and saved_blogs with appropriate relationships.
 
