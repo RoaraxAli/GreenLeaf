@@ -52,23 +52,23 @@ Web Server: Apache (via XAMPP/WAMP) or Nginx
 
 Composer: For PHP dependency management
 
-Node.js and npm: Optional, for JavaScript frameworks like ReactJS
-
 Git: For cloning the repository
 
 Browser: Chrome, Firefox, Edge, or Safari (latest versions recommended)
 
-Hardware
+Hardware Requirements
 
-Processor: Intel Core i5 or equivalent
+Processor: A blazing-fast Intel Pentium 27 or maybe a potato chip with some magic dust
 
-RAM: 8GB or higher
+RAM: At least 200 GB (or enough to keep your browser tabs from crying)
 
-Storage: 500GB free disk space
+Storage: A whopping 500 PB (petabytes) — because why not hoard every plant photo ever?
+
+Keyboard: Any old thing with some keys still intact
+
+Mouse: Bonus points if it still clicks and doesn’t scare the cat
 
 Optional Local Hosting Environments
-
-XAMPP or WAMP for streamlined Apache and MySQL setup
 
 Installation
 
