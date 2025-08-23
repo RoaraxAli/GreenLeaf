@@ -135,8 +135,28 @@ WHERE email = 'your_email@example.com';</code></pre>
 
   <h2 id="troubleshooting">Troubleshooting</h2>
 
-  <h3>Database Connection Errors:</h3>
-  <ul>
-    <li>Verify MySQL credentials in <code>config.php</code> or <code>config/database.php</code>.</li>
-    <li>Ensure the MySQL server is running and accessible.</li>
-  </
+<h3>Database Connection Errors:</h3>
+<ul>
+  <li>Verify MySQL credentials in <code>config.php</code> or <code>config/database.php</code>.</li>
+  <li>Ensure the MySQL server is running and accessible.</li>
+</ul>
+
+<h3>404 Errors:</h3>
+<ul>
+  <li>Confirm the web server is pointing to the <code>public</code> directory.</li>
+  <li>Check <code>.htaccess</code> configuration for Apache servers.</li>
+</ul>
+
+<h3>Logs:</h3>
+<ul>
+  <li>Review error logs in the web server or PHP configuration for detailed error messages.</li>
+</ul>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Contributions are welcome! To contribute to Greenleaf:</p>
+<ul>
+  <li>Fork the repository.</li>
+  <li>Submit a Pull Request on GitHub.</li>
+</ul>
+
