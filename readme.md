@@ -49,31 +49,19 @@ Installation
 Follow these steps to set up the Greenleaf application from the GitHub repository:
 
 Clone the Repository:
-
-Clone the project from GitHub:git clone https://github.com/RoaraxAli/GreenLeaf.git
-
-
+git clone https://github.com/RoaraxAli/GreenLeaf.git
 
 
 Navigate to the Project Folder:
-
-Change to the project directory:cd GreenLeaf
-
-
+cd GreenLeaf
 
 
 Install PHP Dependencies:
-
-Run the following command in the project root to install PHP dependencies:composer install
-
-
+composer install
 
 
 Install JavaScript Dependencies (if applicable):
-
-If the project uses a JavaScript framework (e.g., ReactJS), install dependencies:npm install
-
-
+npm install
 
 
 
@@ -83,7 +71,7 @@ Configure the MySQL database to support the Greenleaf application:
 Create the Database:
 
 Access your MySQL client (e.g., phpMyAdmin, MySQL Workbench, or command line).
-Create a new database named greenleaf:CREATE DATABASE greenleaf;
+Create a new database named greenleaf:mysql -u <your_mysql_username> -p -e "CREATE DATABASE greenleaf;"
 
 
 
@@ -153,12 +141,6 @@ Start the Web Server:
 If using XAMPP/WAMP, ensure Apache and MySQL services are running.
 If using a standalone web server, configure it to point to the public directory of the project.
 
-
-Run the Application:
-
-For Laravel-based projects, start the development server:php artisan serve
-
-
 Alternatively, configure your web server to serve the public directory and access it via http://localhost.
 
 
@@ -171,22 +153,50 @@ Open your browser and navigate to http://localhost:8000 (or the appropriate URL 
 Project Structure
 The project follows a standard structure for a PHP-based web application:
 GreenLeaf/
-├── config/                # Configuration files (e.g., config.php, database.php)
-├── database/              # Database schema and migration files (e.g., database.sql)
-├── public/                # Publicly accessible files (e.g., index.php, CSS, JS)
-├── src/                   # Application source code (PHP classes, controllers, etc.)
-├── assets/                # Static assets (images, stylesheets, scripts)
-├── tests/                 # Unit and integration tests (if applicable)
-├── .gitignore             # Git ignore file
-├── composer.json          # PHP dependencies
-├── package.json           # JavaScript dependencies (if applicable)
-└── README.md              # Project documentation
+├── sql/                        # Database-related files
+├── config/                     # Configuration files
+├── public/                     # Public-facing resources (e.g., index.php)
+├── assets/                     # Static files like images, CSS, JS
+├── styles/                     # Custom stylesheets
+├── includes/                   # Included PHP modules or logic
+├── components/                 # UI components
+├── admin/                      # Admin panel related code
+├── auth/                       # Authentication-related scripts
+├── app/                        # Application logic
+├── api/                        # API endpoints or handlers
+├── image.webp                  # Example image file
+├── placeholder.jfif            # Placeholder image
+├── components.json             # Component definitions (if using JS framework)
+├── index.php                   # Main entry point
+├── about.php
+├── blog.php
+├── blog-detail.php
+├── cart.php
+├── catalog.php
+├── checkout.php
+├── my-garden.php
+├── order-confirmation.php
+├── orders.php
+├── plant-detail.php
+├── reminders.php
+├── README.md                   # Project documentation
 
 User Credentials
-For testing purposes, the database.sql file includes default user accounts:
 
-Username: admin@greenleaf.com
-Password: admin123
+# Go to the signup page and create your account:
+# Username: Choose your preferred username or email
+# Password: Set a secure password of your choice
+
+# After signing up, update your role to admin in the database.
+
+# Open your SQL tool (e.g., phpMyAdmin) or use a MySQL client.
+
+# Run the following SQL query (replace your_email@example.com with your email):
+
+UPDATE users
+SET role = 'admin'
+WHERE email = 'your_email@example.com';
+
 
 Security Note: Update default credentials immediately after setup to ensure security.
 Troubleshooting
@@ -196,11 +206,6 @@ Verify MySQL credentials in config.php or config/database.php.
 Ensure the MySQL server is running and accessible.
 
 
-Dependency Issues:
-Run composer install to ensure all PHP dependencies are installed.
-Run npm install for JavaScript dependencies if applicable.
-
-
 404 Errors:
 Confirm the web server is pointing to the public directory.
 Check .htaccess configuration for Apache servers.
@@ -208,25 +213,11 @@ Check .htaccess configuration for Apache servers.
 
 Logs:
 Review error logs in the web server or PHP configuration for detailed error messages.
-For Laravel projects, check storage/logs/laravel.log.
-
 
 
 Contributing
 Contributions are welcome! To contribute to Greenleaf:
 
-Fork the repository: https://github.com/RoaraxAli/GreenLeaf.
-Create a feature branch:git checkout -b feature/YourFeature
-
-
-Commit your changes:git commit -m 'Add YourFeature'
-
-
-Push to the branch:git push origin feature/YourFeature
-
-
 Create a Pull Request on GitHub.
 
 Please ensure your code adheres to the project's coding standards and includes appropriate tests.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
