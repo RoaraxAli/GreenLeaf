@@ -382,8 +382,7 @@ INSERT INTO `users` (`user_id`, `username`, `email`, `password_hash`, `profile_i
 (2, 'john_doe', 'john@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'default-avatar.jpg', 'John Doe', '+1234567891', '456 Garden Lane, Plant City', 'user', '2025-08-23 08:37:40', '2025-08-23 08:37:40'),
 (3, 'jane_smith', 'jane@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'default-avatar.jpg', 'Jane Smith', '+1234567892', '789 Green Avenue, Leaf Town', 'user', '2025-08-23 08:37:40', '2025-08-23 08:37:40'),
 (4, 'plant_lover', 'lover@plants.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'default-avatar.jpg', 'Plant Lover', '+1234567893', '321 Nature Road, Garden City', 'user', '2025-08-23 08:37:40', '2025-08-23 08:37:40'),
-(5, 'green_thumb', 'green@thumb.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'default-avatar.jpg', 'Green Thumb', '+1234567894', '654 Botanical Street, Flora City', 'user', '2025-08-23 08:37:40', '2025-08-23 08:37:40'),
-(6, 'ASD', 'roaraxyt@gmail.com', '$2y$10$aWA7jQsVwNLI7r7drfONNeVvFKuMizW4zlHFVeISpEN1oV12LrXF6', 'default-avatar.jpg', 'roarax', NULL, NULL, 'admin', '2025-08-23 08:43:37', '2025-08-23 08:45:58');
+(5, 'green_thumb', 'green@thumb.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'default-avatar.jpg', 'Green Thumb', '+1234567894', '654 Botanical Street, Flora City', 'user', '2025-08-23 08:37:40', '2025-08-23 08:37:40');
 
 -- --------------------------------------------------------
 
